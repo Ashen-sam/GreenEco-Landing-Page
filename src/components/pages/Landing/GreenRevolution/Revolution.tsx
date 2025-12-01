@@ -3,8 +3,6 @@ import image2 from '../../../../../public/image2.jpg'
 import image3 from '../../../../../public/image3.jpg'
 import image4 from '../../../../../public/image4.jpg'
 
-
-
 export const Revolution = () => {
     const cards = [
         {
@@ -30,22 +28,26 @@ export const Revolution = () => {
     ];
 
     return (
-        <div className="w-full py-16 bg-[#c8e6d0] bodini_font bg_waves_wallpaper" >
-            <div className="max-w-7xl m-auto">
-                <div className="flex flex-col items-center text-center gap-3">
-                    <h2 className="text-5xl font-serif text-[#2d4a3e]">Join the Green Revolution</h2>
-                    <p className="text-xl text-[#2d4a3e]">Choose Your Path to Making a Difference Today!</p>
+        <div className="w-full py-10 bg-[#c8e6d0] bodini_font bg_waves_wallpaper px-4" >
+            <div className="max-w-[1400px] m-auto">
+                <div className="flex flex-col items-center bodini_font text-center gap-3">
+                    <h2 className="text-5xl leading-24 ">Join the Green Revolution</h2>
+                    <p className="text-5xl ">Choose Your Path to Making a Difference Today!</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-14 px-10">
+                <div className="grid sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-4 gap-10 my-20  ">
                     {cards.map((card, index) => (
-                        <div key={index} className="flex flex-col items-center text-center gap-4">
-                            <img src={card.image} alt="" className="h-36 w-36 rounded-full object-cover shadow-lg" />
-                            <h3 className="text-xl font-semibold text-[#2d4a3e]">{card.title}</h3>
-                            <p className="text-sm text-[#3d5a4d] plus_jakarta_font">{card.description}</p>
-                            <button className="px-6 py-2.5 rounded-md bg-[#3aa456] text-white font-medium transition-colors">
-                                Contribute Now
-                            </button>
+                        <div>
+                            <div key={index} className="flex flex-col items-center text-center  gap-4 ">
+                                <img src={card.image} alt="" className="h-36 w-36 rounded-full object-cover shadow-lg" />
+                                <div className="text-2xl font-semibold ">{card.title}</div>
+                                <div className="text-xs plus_jakarta_font px-2 md:min-h-15">{card.description}</div>
+                                <button className="px-6 plus_jakarta_font py-2.5 rounded-md bg-[#3aa456] text-white text-sm font-medium transition-colors">
+                                    Contribute Now
+                                </button>
+                            </div>
+                            <div>
+                            </div>
                         </div>
                     ))}
                 </div>

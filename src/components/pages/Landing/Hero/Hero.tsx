@@ -4,7 +4,7 @@ import handTree from '../../../../../public/6769485.jpg'
 export const Hero = () => {
     return (
         <div className="bg-gradient-to-br from-stone-100 to-stone-200 flex items-center justify-center p-8">
-            <div className=" w-full max-w-[1000px]  ">
+            <div className=" w-full max-w-[1400px] ">
 
 
                 <div className="relative z-10 h-full flex flex-col justify-between p-12">

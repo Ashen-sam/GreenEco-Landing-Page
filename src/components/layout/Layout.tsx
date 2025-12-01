@@ -1,11 +1,11 @@
-import { Hero, LatestNews, Mission, Revolution, Stats } from "../pages"
+import { Hero, LatestNews, Mission, Revolution, Stats, TrustedTeam } from "../pages"
 import { Footer } from "./Footer"
 import { Navbar } from "./Navbar"
 
 export const Layout = () => {
     return (
         <div>
-            <div className="     m-auto">
+            <div className="  overflow-x-hidden   m-auto">
                 <div className="max-w-7xl m-auto">
                     <Navbar />
                 </div>
@@ -13,6 +13,7 @@ export const Layout = () => {
                 <Stats />
                 <Mission />
                 <Revolution />
+                <TrustedTeam />
                 <LatestNews />
                 <Footer />
             </div>
