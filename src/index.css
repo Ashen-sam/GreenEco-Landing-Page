@@ -31,9 +31,10 @@
   font-style: normal;
 }
 
-/* .bg_waves_wallpaper {
-  background-image: url("../public/wave-textures-white-background-vector_53876-60286-removebg-preview.png");
+.bg_phone_wallpaper {
+  background-image: url("../public/new1.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-} */
+  min-height: 80vh;
+}

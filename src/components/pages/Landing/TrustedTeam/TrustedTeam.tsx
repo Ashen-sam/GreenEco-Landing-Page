@@ -70,7 +70,7 @@ export const TrustedTeam = () => {
                     </motion.div>
                 </div>
             </div>
-            <div className="mx-auto px-6 bodini_font  py-8">
+            <div className="mx-auto  bodini_font  py-8">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl text-[#121C2D] leading-24 md:text-5xl font-semibold  ">
                         Meet Our Trusted Team of
@@ -79,7 +79,7 @@ export const TrustedTeam = () => {
                         Supervisory Authorities
                     </h3>
                 </div>
-                <div className="space-y-8">
+                <div className="space-y-8 ">
                     <div className="overflow-hidden relative h-32 md:h-40">
                         <motion.div
                             className="flex absolute gap-8 md:gap-12"
@@ -96,7 +96,7 @@ export const TrustedTeam = () => {
                             {firstRowDuplicated.map((logo, index) => (
                                 <div
                                     key={index}
-                                    className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white flex items-center justify-center shadow-sm hover:shadow-md transition flex-shrink-0"
+                                    className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white flex items-center justify-center shadow-sm hover:shadow-md transition shrink-0"
                                 >
                                     <img
                                         src={logo}
@@ -124,7 +124,7 @@ export const TrustedTeam = () => {
                             {secondRowDuplicated.map((logo, index) => (
                                 <div
                                     key={index}
-                                    className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white flex items-center justify-center shadow-sm hover:shadow-md transition flex-shrink-0"
+                                    className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white flex items-center justify-center shadow-sm hover:shadow-md transition shrink-0"
                                 >
                                     <img
                                         src={logo}
@@ -138,9 +138,6 @@ export const TrustedTeam = () => {
                 </div>
                 <img className='absolute top-22 -z-1000 -left-22' width={400} src={imageLeaves} alt="" />
                 <img className="absolute top-22 -z-1000 -right-42 " width={400} src={imageLeaves} alt="" />
-
-
-
             </div>
         </div>
     );

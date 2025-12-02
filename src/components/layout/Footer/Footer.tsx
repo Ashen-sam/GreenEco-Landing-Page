@@ -30,14 +30,13 @@ export const Footer = () => {
                     <div className="flex flex-col">
                         <h2 className="text-4xl mb-8 font-serif leading-tight">Connect on Social</h2>
                         <div className="flex gap-3">
-                            {socialIcons.map(({ Icon, href }, index) => (
-                                <a
+                            {socialIcons.map(({ Icon }, index) => (
+                                <div
                                     key={index}
-                                    href={href}
-                                    className="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 transition-colors"
+                                    className="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center hover:bg-gray-600 "
                                 >
                                     <Icon size={18} />
-                                </a>
+                                </div>
                             ))}
                         </div>
                     </div>

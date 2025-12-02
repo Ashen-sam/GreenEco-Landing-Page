@@ -3,18 +3,15 @@ import handTree from '../../../../../public/6769485.jpg'
 
 export const Hero = () => {
     return (
-        <div className="bg-gradient-to-br from-stone-100 to-stone-200 flex items-center justify-center p-8">
+        <div className="bg-linear-to-br from-stone-100 to-stone-200 flex items-center justify-center p-8">
             <div className=" w-full max-w-[1400px] ">
-
-
                 <div className="relative z-10 h-full flex flex-col justify-between p-12">
-
                     <div className="max-w-xl">
                         <h1 className="text-7xl font-serif leading-tight text-stone-800 mb-8">
                             Planting trees for better future
                         </h1>
                         <div className='p-2 flex flex-col gap-2'>
-                            <Globe className=" text-stone-600 mt-1 flex-shrink-0" />
+                            <Globe className=" text-stone-600 mt-1 shrink-0" />
 
                             <div className="flex items-start gap-3   rounded-lg max-w-[280px] mb-6">
                                 <p className="text-sm  text-stone-700">
@@ -22,15 +19,13 @@ export const Hero = () => {
                                 </p>
                             </div>
                         </div>
-
                         <button className="bg-[#3aa456] text-white px-8 py-3 rounded-md font-medium transition-colors">
                             Contribute Now
                         </button>
                     </div>
-
                     <div className="self-end bg-white p-6 rounded-2xl shadow-xl ">
                         <div className="flex items-start gap-4">
-                            <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                            <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center shrink-0">
                                 <img src={handTree} width={400} height={200} alt="handTree" />
                             </div>
                             <div>
@@ -42,7 +37,6 @@ export const Hero = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

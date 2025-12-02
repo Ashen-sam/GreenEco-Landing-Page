@@ -8,7 +8,7 @@ export const Mission = () => {
             <div className="max-w-[1400px] m-auto">
                 <div className=" text-[#121C2D] text-lg font-medium">What do we do</div>
                 <div className="text-lg text-[#121C2D] font-medium mt-1 mb-12">Learn About Our Story and Mission</div>
-                <div className="flex flex-col gap-12 bodini_font">
+                <div className="flex flex-col gap-12 bodini_font py-8">
                     <div className="flex flex-col items-center text-center gap-4 border-b border-black/10 pb-10">
                         <div className="text-3xl  md:text-5xl text-[#121C2D]">We're Growing a
                             <span className="inline-block mx-3 rounded-full overflow-hidden h-10 md:h-22 w-28 md:w-72 align-middle">
