@@ -5,6 +5,7 @@ import { Navbar } from "./Navbar"
 import { motion } from 'framer-motion';
 import { useEffect, useState } from "react";
 import logoNew from '../../../public/logoNewTree.png'
+import { SmoothScroll } from "../animations";
 
 export const Layout = () => {
     const [loading, setLoading] = useState(true);
@@ -14,6 +15,7 @@ export const Layout = () => {
     }, []);
     return (
         <div>
+            <SmoothScroll />
             <AnimatePresence mode="wait">
                 {loading && (
                     <motion.div

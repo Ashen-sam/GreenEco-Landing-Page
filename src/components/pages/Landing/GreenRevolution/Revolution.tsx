@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import image1 from '../../../../../public/image1.jpg'
 import image2 from '../../../../../public/image2.jpg'
 import image3 from '../../../../../public/image3.jpg'
@@ -28,30 +29,45 @@ export const Revolution = () => {
     ];
 
     return (
-        <div className="w-full py-10 bg-[#c8e6d0] bodini_font bg_waves_wallpaper px-4" >
+        <div
+            className="w-full py-10 bg-[#c8e6d0] bodini_font bg_waves_wallpaper px-4"
+        >
             <div className="max-w-[1400px] m-auto">
                 <div className="flex flex-col items-center bodini_font text-center gap-3">
-                    <h2 className="text-5xl leading-24 ">Join the Green Revolution</h2>
-                    <p className="text-5xl ">Choose Your Path to Making a Difference Today!</p>
+                    <h2 className="text-5xl leading-24">Join the Green Revolution</h2>
+                    <p className="text-5xl">Choose Your Path to Making a Difference Today!</p>
                 </div>
 
-                <div className="grid sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-4 gap-10 my-20  ">
+                <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 my-20">
                     {cards.map((card, index) => (
-                        <div>
-                            <div key={index} className="flex flex-col items-center text-center  gap-4 ">
-                                <img src={card.image} alt="" className="h-36 w-36 rounded-full object-cover shadow-lg" />
-                                <div className="text-2xl font-semibold ">{card.title}</div>
-                                <div className="text-xs plus_jakarta_font px-2 md:min-h-15">{card.description}</div>
-                                <button className="px-6 plus_jakarta_font py-2.5 rounded-md bg-[#3aa456] text-white text-sm font-medium transition-colors">
-                                    Contribute Now
-                                </button>
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                duration: 0.6, delay: index * 0.15, type: "spring",
+                                stiffness: 120,
+                                damping: 12,
+                                mass: 1,
+                            }}
+                            className="flex flex-col items-center text-center gap-4"
+                        >
+                            <img
+                                src={card.image}
+                                className="h-36 w-36 rounded-full object-cover shadow-lg"
+                            />
+                            <div className="text-2xl font-semibold">{card.title}</div>
+                            <div className="text-xs plus_jakarta_font px-2 md:min-h-15">
+                                {card.description}
                             </div>
-                            <div>
-                            </div>
-                        </div>
+                            <button className="px-6 plus_jakarta_font py-2.5 rounded-md bg-[#3aa456] text-white text-sm font-medium transition-colors">
+                                Contribute Now
+                            </button>
+                        </motion.div>
                     ))}
                 </div>
             </div>
-        </div >
+        </div>
     );
-}
+};

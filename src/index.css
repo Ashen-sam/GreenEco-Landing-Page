@@ -38,3 +38,52 @@
   background-position: center;
   min-height: 80vh;
 }
+
+.hero_wall {
+  background-image: url("../public/hero_wall.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.stats_wall {
+  background-image: url("../public/stats_wall.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .hero_wall {
+    padding: 60px;
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero_wall {
+    padding: 30px;
+    min-height: 50vh;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3aa456;
+  border: 2px solid #3aa456;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}

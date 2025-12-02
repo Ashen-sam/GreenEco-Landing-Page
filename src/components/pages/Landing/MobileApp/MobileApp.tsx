@@ -1,14 +1,30 @@
+import { motion } from "framer-motion"
 import appleStore from '../../../../../public/Component 2.png'
 import playStore from '../../../../../public/playnew.png'
 
 export const MobileApp = () => {
     return (
-        <div className="bg_phone_wallpaper bg-[#755858] min-h-[80vh] flex items-center relative overflow-hidden">
+        <div
+            className="bg_phone_wallpaper bg-[#755858] min-h-[80vh] flex items-center overflow-hidden"
+        >
             <div className="max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-0">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center text-white">
 
-                    <div className="text-center lg:text-left border-l border-gray-100 order-2 lg:order-1">
-                        <div className="text-2xl sm:text-3xl font-semibold border-b border-gray-100 pl-3 sm:pl-4 py-3">
+                <div className="md:max-w-full max-w-[600px] md:min-h-full min-h-[800px] m-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center relative text-white">
+
+                    <motion.div
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.7, type: "spring",
+                            stiffness: 120,
+                            damping: 12,
+                            mass: 1,
+                            delay: 0.3
+                        }}
+                        className="text-center lg:text-left border-l-2 border-zinc-300"
+                    >
+                        <div className="text-2xl sm:text-3xl font-semibold border-b-2 bodini_font border-zinc-300 pl-3 sm:pl-4 py-3">
                             1 Million trees worldwide
                         </div>
                         <div className="text-sm sm:text-base leading-relaxed p-3 sm:p-4">
@@ -16,19 +32,46 @@ export const MobileApp = () => {
                             of our community of dedicated tree planters. Join us in our mission
                             to create a greener future by downloading the app today!
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div className="order-1 lg:order-2 border">
-                        <div className="text-sm sm:text-base leading-relaxed mb-6 sm:mb-8 px-4">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8, delay: 0.1 }}
+                        className="min-w-[450px]"
+                    />
+
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.7, delay: 0.4, type: "spring",
+                            stiffness: 120,
+                            damping: 12,
+                            mass: 1,
+                        }}
+                        className="order-1"
+                    >
+                        <div className="text-sm sm:text-base md:text-left p-3 text-center leading-relaxed mb-6 sm:mb-8">
                             Join the tree planting movement from anywhere, at any time.
                             Download our app and start making a difference today!
                         </div>
 
-                        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 px-4">
-                            <img src={appleStore} className="h-10 sm:h-12 mx-auto sm:mx-0" alt="Download on App Store" />
-                            <img src={playStore} className="h-10 sm:h-12 mx-auto sm:mx-0" alt="Get it on Google Play" />
+                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                            <img
+                                src={appleStore}
+                                className="h-10 sm:h-12 mx-auto sm:mx-0"
+                                alt="Download on App Store"
+                            />
+                            <img
+                                src={playStore}
+                                className="h-10 sm:h-12 mx-auto sm:mx-0"
+                                alt="Get it on Google Play"
+                            />
                         </div>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

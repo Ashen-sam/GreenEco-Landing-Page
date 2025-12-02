@@ -1,20 +1,39 @@
+import { motion } from "framer-motion"
+
 export const Stats = () => {
+    const stats = [
+        { value: "977 million+", label: "Trees produced, planted, and protected" },
+        { value: "280", label: "Project sites in 10 countries" },
+        { value: "14,800+", label: "Projects Active" }
+    ]
+
     return (
-        <div className="w-full bg-[#0d1b2a]  text-white py-12 flex flex-col bodini_font md:flex-row items-center justify-center gap-12 md:gap-24 ">
-            <div className="flex flex-col items-center text-center gap-2">
-                <div className="text-3xl md:text-4xl font-semibold">977 million+</div>
-                <div className="text-sm opacity-80">Trees produced, planted, and protected</div>
-            </div>
-            <div className="h-12 w-px bg-white/20 hidden md:block" />
-            <div className="flex flex-col items-center text-center gap-2">
-                <div className="text-3xl md:text-4xl font-semibold">280</div>
-                <div className="text-sm opacity-80">Project sites in 10 countries</div>
-            </div>
-            <div className="h-12 w-px bg-white/20 hidden md:block" />
-            <div className="flex flex-col items-center text-center gap-2">
-                <div className="text-3xl md:text-4xl font-semibold">14,800+</div>
-                <div className="text-sm opacity-80">Projects Active</div>
-            </div>
-        </div>
+        <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, type: "spring", stiffness: 110 }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="w-full bg-[#0d1b2a] min-h-[300px] stats_wall text-white py-12 flex flex-col bodini_font md:flex-row items-center justify-center gap-12 md:gap-24"
+        >
+            {stats.map((item, index) => (
+                <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, type: "spring", delay: index * 0.2, stiffness: 110 }}
+                    viewport={{ once: true }}
+                    className="flex items-center gap-12 md:gap-24"
+                >
+                    <div className="flex flex-col items-center text-center gap-2 px-2">
+                        <div className="text-3xl md:text-5xl font-semibold tracking-[1.1px]">{item.value}</div>
+                        <div className="text-md opacity-80 plus_jakarta_font">{item.label}</div>
+                    </div>
+
+                    {index !== stats.length - 1 && (
+                        <div className="h-24 w-px bg-white/20 hidden md:block" />
+                    )}
+                </motion.div>
+            ))}
+        </motion.div>
     )
 }
