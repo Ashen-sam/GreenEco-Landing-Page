@@ -77,7 +77,7 @@ export const Navbar = () => {
                         animate={{ y: 0, opacity: 1 }}
                         exit={{ y: -200, opacity: 0 }}
                         transition={{ type: 'tween' }}
-                        className="  top-0 absolute left-0 w-full md:hidden bg-white shadow-2xl rounded-md z-40"
+                        className="  top-0 absolute left-0 w-full md:hidden bg-white shadow-2xl rounded-b-lg z-40"
                     >
                         <div className="flex flex-col justify-start items-start p-4">
                             <motion.div

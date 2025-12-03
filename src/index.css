@@ -132,3 +132,11 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
 }
+
+.trusted_team_wallpaper {
+  background-image: url("../public/wallpaper_2.png");
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  background-repeat: no-repeat;
+}

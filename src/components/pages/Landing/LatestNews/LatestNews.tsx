@@ -23,7 +23,7 @@ export const LatestNews = () => {
         <div
             className="bg-[#F7F5F2] border-2 border-zinc-300"
         >
-            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1550px] mx-auto">
                 <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 items-start">
 
                     <motion.div
@@ -64,11 +64,12 @@ export const LatestNews = () => {
                                     }}
                                     className="flex flex-col"
                                 >
-                                    <div className="w-full aspect-[1.4/1] rounded-[45%] overflow-hidden mb-4 bg-gray-100">
+                                    <div className="w-full flex justify-center rounded-full  mb-4 bg-gray-100">
                                         <img
                                             src={item.image}
                                             alt={item.title}
-                                            className="w-full h-full "
+                                            width={350}
+                                            className="rounded-[120px]"
                                         />
                                     </div>
                                     <motion.div
@@ -80,7 +81,7 @@ export const LatestNews = () => {
                                             stiffness: 110,
                                             delay: index * 0.2
                                         }}
-                                        className="text-[18px] sm:text-[20px] md:text-[22px] leading-[1.3] bodini_font text-[#2c2c2c] mb-4 sm:mb-6 text-center px-2 sm:px-4"
+                                        className="text-[18px] sm:text-[20px] md:text-[22px] leading-[1.3] bodini_font text-[#2c2c2c] mb-4 sm:mb-2 text-center px-2 sm:px-4"
                                     >
                                         {item.title}
                                     </motion.div>
@@ -99,7 +100,7 @@ export const LatestNews = () => {
                                     </motion.div>
                                     <div className="text-center mt-auto plus_jakarta_font">
                                         <a
-                                            href="#"
+                                            href="https://www.linkedin.com/in/ashen-samarasekera-08354a249/"
                                             className="text-[#52C27D] text-[14px] sm:text-[15px] font-medium inline-block border-b-2 border-[#52C27D] pb-1 hover:opacity-80 transition-opacity"
                                         >
                                             Learn More
@@ -108,15 +109,16 @@ export const LatestNews = () => {
                                 </motion.div>
                             ))}
                         </div>
-                        <motion.div
-                            initial={{ width: "0%" }}
-                            whileInView={{ width: "50%" }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 1, ease: "easeOut" }}
-                            className="relative h-1.5 w-full bg-gray-200 rounded-full mt-10 sm:mt-14 overflow-hidden"
-                        >
-                            <div className="absolute top-0 left-0 h-full bg-[#52C27D] rounded-full"></div>
-                        </motion.div>
+                        <div className="relative h-1.5 w-full bg-gray-200 rounded-full mt-10 sm:mt-14 overflow-hidden">
+                            <motion.div
+                                initial={{ width: "0%" }}
+                                whileInView={{ width: "50%" }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 1, ease: "easeOut" }}
+                                className="h-full bg-[#52C27D] rounded-full"
+                            />
+                        </div>
+
                     </div>
 
                 </div>

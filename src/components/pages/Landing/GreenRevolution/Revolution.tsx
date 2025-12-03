@@ -53,7 +53,6 @@ export const Revolution = () => {
                             delay: 0.2
                         }} className="md:text-4xl text-3xl   ">Choose Your Path to Making a Difference Today!</motion.div>
                 </div>
-
                 <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 my-20">
                     {cards.map((card, index) => (
                         <div key={index} className="flex items-center">
@@ -88,7 +87,6 @@ export const Revolution = () => {
                                     Contribute Now
                                 </motion.button>
                             </motion.div>
-
                             {index !== cards.length - 1 && (
                                 <motion.div
                                     initial={{ opacity: 0, x: 40 }}

@@ -8,8 +8,7 @@ export const Mission = () => {
         <div
             className="bg-[#f7f6f2] w-full py-16 px-6 md:px-20 plus_jakarta_font"
         >
-            <div className="max-w-[1400px] m-auto">
-
+            <div className="max-w-[1550px] m-auto">
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -19,7 +18,6 @@ export const Mission = () => {
                 >
                     What do we do
                 </motion.div>
-
                 <motion.div
                     initial={{ opacity: 0, x: -26 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -29,9 +27,7 @@ export const Mission = () => {
                 >
                     Learn About Our Story and Mission
                 </motion.div>
-
                 <div className="flex flex-col gap-12 bodini_font py-8">
-
                     <motion.div
                         initial={{ opacity: 0, y: 25 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -47,7 +43,6 @@ export const Mission = () => {
                             Greener Future
                         </div>
                     </motion.div>
-
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -59,7 +54,6 @@ export const Mission = () => {
                             Our Mission to Plant Trees and Reduce
                         </div>
                     </motion.div>
-
                     <motion.div
                         initial={{ opacity: 0, x: 35 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -76,13 +70,11 @@ export const Mission = () => {
                             </motion.div>
                             Carbon Footprint
                         </div>
-
                         <div className="rounded-full overflow-hidden h-10 md:h-22 w-28 md:w-72">
                             <img src={image8} className="h-full w-full object-cover" />
                         </div>
-
                         <div className="text-green-600 plus_jakarta_font underline font-medium flex text-2xl items-center gap-1 cursor-pointer">
-                            About Us <motion.span
+                            <a href="https://www.linkedin.com/in/ashen-samarasekera-08354a249/">About Us </a><motion.span
                                 initial={{ rotate: 0 }}
                                 whileInView={{ rotate: 360 }}
                                 viewport={{ amount: 0.1, once: false }}

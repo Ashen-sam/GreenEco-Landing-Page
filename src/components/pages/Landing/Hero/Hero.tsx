@@ -10,8 +10,6 @@ export const Hero = () => {
             transition={{
                 type: "spring",
                 stiffness: 120,
-                damping: 12,
-                mass: 1,
                 delay: 0.18
             }}
             className="hero_wall   min-h-screen flex  justify-center p-4 sm:p-6 md:p-8 lg:p-12 relative overflow-hidden"
@@ -130,7 +128,7 @@ export const Hero = () => {
                                     backgroundColor: "#329947",
                                     transition: { duration: 0.35 }
                                 }}
-                                className="common_button_bg text-white px-8 py-3.5 sm:py-4 rounded-md font-medium text-sm sm:text-base w-full sm:w-auto max-w-[200px]"
+                                className="common_button_bg text-white px-8 py-3.5 sm:py-4 rounded-md font-medium text-sm sm:text-base w-full sm:w-auto sm:max-w-[200px]"
                             >
                                 Contribute Now
                             </motion.button>
@@ -147,7 +145,7 @@ export const Hero = () => {
                                 mass: 1,
                                 delay: 1.2
                             }}
-                            className="w-full md:absolute md:-right-30 md:-bottom-20 lg:w-auto lg:max-w-[380px] xl:max-w-[470px] bg-white p-5 sm:p-6 md:p-5 rounded-2xl shadow-xl"
+                            className="w-full md:mt-20  lg:w-auto lg:max-w-[380px] xl:max-w-[470px] bg-white p-5 sm:p-6 md:p-5 rounded-2xl shadow-xl"
                         >
                             <div className="flex sm:flex-row sm:text-left text-center flex-col sm:items-start gap-4 sm:gap-5">
                                 <div className="rounded-full flex items-center justify-center shrink-0 overflow-hidden">
@@ -162,7 +160,7 @@ export const Hero = () => {
                                         You can choose how to contribute to tree planting today!
                                     </div>
                                     <button className="text-sm sm:text-[15px] font-semibold text-stone-800 border-b-2 border-stone-800 hover:text-emerald-700 hover:border-emerald-700 transition-colors pb-0.5">
-                                        Take Action
+                                        <a href="https://www.linkedin.com/in/ashen-samarasekera-08354a249/">Take Action</a>
                                     </button>
                                 </div>
                             </div>

@@ -6,7 +6,6 @@ export const Stats = () => {
         { value: "280", label: "Project sites in 10 countries" },
         { value: "14,800", label: "Projects Active" }
     ]
-
     return (
         <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -45,7 +44,6 @@ export const Stats = () => {
                         </div>
                         <div className="text-md opacity-80 plus_jakarta_font">{item.label}</div>
                     </div>
-
                     {index !== stats.length - 1 && (
                         <div className="h-24 w-px bg-white/20 hidden md:block" />
                     )}

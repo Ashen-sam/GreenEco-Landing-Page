@@ -27,9 +27,7 @@ export const TrustedTeam = () => {
         image18,
         image19,
         image20
-
     ];
-
     const hashtags = [
         'ewableEnergy',
         '#ClimateCrisis',
@@ -42,11 +40,11 @@ export const TrustedTeam = () => {
     const midPoint = Math.ceil(logos.length / 2);
     const firstRowLogos = logos.slice(0, midPoint);
     const secondRowLogos = logos.slice(midPoint);
-
     const firstRowDuplicated = [...firstRowLogos, ...firstRowLogos, ...firstRowLogos];
     const secondRowDuplicated = [...secondRowLogos, ...secondRowLogos, ...secondRowLogos];
+
     return (
-        <div className="bg-[#F7F5F2] pb-18 relative z-1006">
+        <div className="bg-[#F7F5F2]  pb-18 relative z-1006">
             <div>
                 <div className='flex items-center  justify-center border-2 border-x-0 py-6 border-zinc-300 overflow-hidden'>
                     <motion.div
@@ -59,7 +57,6 @@ export const TrustedTeam = () => {
                             repeat: Infinity,
                             ease: 'linear',
                             repeatType: 'loop'
-
                         }}
                     >
                         {[...hashtags, ...hashtags].map((tag, index) => (
@@ -124,7 +121,6 @@ export const TrustedTeam = () => {
                             ))}
                         </motion.div>
                     </div>
-
                     <div className="overflow-hidden relative h-32 md:h-40">
                         <motion.div
                             className="flex absolute gap-8 md:gap-12"

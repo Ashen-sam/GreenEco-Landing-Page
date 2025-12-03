@@ -7,8 +7,7 @@ export const MobileApp = () => {
         <div
             className="bg_phone_wallpaper bg-[#755858] flex items-center overflow-hidden"
         >
-            <div className="max-w-[1500px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-0">
-
+            <div className="max-w-[1620px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-0">
                 <div className="md:max-w-full max-w-[600px] md:min-h-[1200px] min-h-[800px] m-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center relative text-white">
 
                     <motion.div
@@ -49,7 +48,6 @@ export const MobileApp = () => {
                             to create a greener future by downloading the app today!
                         </motion.div>
                     </motion.div>
-
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -57,7 +55,6 @@ export const MobileApp = () => {
                         transition={{ duration: 0.8, delay: 0.1 }}
                         className="min-w-[450px]"
                     />
-
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -70,11 +67,10 @@ export const MobileApp = () => {
                         }}
                         className="order-1"
                     >
-                        <div className="text-sm sm:text-base md:text-left text-slate-200 p-3 text-center leading-relaxed mb-6 sm:mb-5">
+                        <div className="text-sm sm:text-base md:text-left text-slate-200 py-3 text-center leading-relaxed mb-6 sm:mb-5">
                             Join the tree planting movement from anywhere, at any time.
                             Download our app and start making a difference today!
                         </div>
-
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
@@ -90,7 +86,7 @@ export const MobileApp = () => {
                                 <img
                                     src={playStore}
                                     className="h-10 sm:h-12 mx-auto sm:mx-0"
-                                    alt="Get it on Google Play"
+                                    alt="Google Play"
                                 />
                             </motion.div>
                             <motion.div
@@ -108,11 +104,9 @@ export const MobileApp = () => {
                                 <img
                                     src={appleStore}
                                     className="h-10 sm:h-12 mx-auto sm:mx-0"
-                                    alt="Download on App Store"
+                                    alt="App Store"
                                 />
-
                             </motion.div>
-
                         </div>
                     </motion.div>
 
