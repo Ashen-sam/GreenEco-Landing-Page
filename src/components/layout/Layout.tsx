@@ -41,7 +41,7 @@ export const Layout = () => {
             </AnimatePresence>
             {!loading && (
                 <div className="overflow-x-hidden m-auto">
-                    <div className="max-w-7xl m-auto">
+                    <div className="max-w-[1400px] m-auto">
                         <Navbar />
                     </div>
                     <Hero />

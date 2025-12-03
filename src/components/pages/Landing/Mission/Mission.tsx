@@ -1,4 +1,4 @@
-import { Shuffle } from 'lucide-react'
+import { CircleArrowOutUpRight, Shuffle } from 'lucide-react'
 import { motion } from 'framer-motion'
 import image7 from '../../../../../public/image7.jpeg'
 import image8 from '../../../../../public/image8.jpeg'
@@ -82,7 +82,11 @@ export const Mission = () => {
                         </div>
 
                         <div className="text-green-600 plus_jakarta_font underline font-medium flex text-2xl items-center gap-1 cursor-pointer">
-                            About Us <span>↗</span>
+                            About Us <motion.span
+                                initial={{ rotate: 0 }}
+                                whileInView={{ rotate: 360 }}
+                                viewport={{ amount: 0.1, once: false }}
+                                transition={{ duration: 0.8 }}><CircleArrowOutUpRight /></motion.span>
                         </div>
                     </motion.div>
                 </div>

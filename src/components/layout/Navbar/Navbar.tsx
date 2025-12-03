@@ -18,7 +18,7 @@ export const Navbar = () => {
     }
 
     return (
-        <>
+        <div className="relative">
             <motion.div
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -26,7 +26,7 @@ export const Navbar = () => {
                     type: 'spring', delay: 0.2, stiffness: 110, damping: 12,
                     mass: 1,
                 }}
-                className="md:flex hidden justify-between items-center p-4 text-sm plus_jakarta_font rounded-sm top-3"
+                className="md:flex bg-[#fcfaf8]  z-1000 right-0 left-0  absolute hidden justify-between items-center p-4 text-sm plus_jakarta_font rounded-xl top-0"
             >
                 <div className="flex items-center justify-center">
                     <img src={treeLogo} width={40} alt="TreeLogo" />
@@ -118,6 +118,6 @@ export const Navbar = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </>
+        </div>
     )
 }

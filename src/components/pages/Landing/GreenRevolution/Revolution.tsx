@@ -79,9 +79,14 @@ export const Revolution = () => {
                                 <div className="text-xs plus_jakarta_font px-2 md:min-h-15">
                                     {card.description}
                                 </div>
-                                <button className="px-6 plus_jakarta_font py-2.5 rounded-md bg-[#3aa456] text-white text-sm font-medium transition-colors">
+                                <motion.button
+                                    initial={false}
+                                    whileHover={{
+                                        backgroundColor: "#329947",
+                                        transition: { duration: 0.35 }
+                                    }} className="px-6 plus_jakarta_font py-2.5 rounded-md bg-[#3aa456] text-white text-sm font-medium transition-colors">
                                     Contribute Now
-                                </button>
+                                </motion.button>
                             </motion.div>
 
                             {index !== cards.length - 1 && (

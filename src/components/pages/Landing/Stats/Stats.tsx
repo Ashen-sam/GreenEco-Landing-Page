@@ -2,9 +2,9 @@ import { motion } from "framer-motion"
 
 export const Stats = () => {
     const stats = [
-        { value: "977 million+", label: "Trees produced, planted, and protected" },
+        { value: "977 million", label: "Trees produced, planted, and protected" },
         { value: "280", label: "Project sites in 10 countries" },
-        { value: "14,800+", label: "Projects Active" }
+        { value: "14,800", label: "Projects Active" }
     ]
 
     return (
@@ -25,7 +25,24 @@ export const Stats = () => {
                     className="flex items-center gap-12 md:gap-24"
                 >
                     <div className="flex flex-col items-center text-center gap-2 px-2">
-                        <div className="text-3xl md:text-5xl font-semibold tracking-[1.1px]">{item.value}</div>
+                        <div className="text-3xl flex items-center gap-2 md:text-5xl font-semibold tracking-[1.1px]">
+                            {item.value == "280" ? item.value : (
+                                <div className="flex items-center justify-center gap-2">
+                                    <div>
+                                        {item.value}
+                                    </div>
+                                    <motion.div
+                                        className="font-bold"
+                                        initial={{ opacity: 0, rotate: 0 }}
+                                        whileInView={{ opacity: 1, rotate: 360 }}
+                                        viewport={{ once: true }}
+                                        transition={{ delay: 0.2, duration: 1, ease: "easeInOut" }}
+                                    >
+                                        +
+                                    </motion.div>
+                                </div>
+                            )}
+                        </div>
                         <div className="text-md opacity-80 plus_jakarta_font">{item.label}</div>
                     </div>
 

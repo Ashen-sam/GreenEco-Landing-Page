@@ -20,11 +20,7 @@ export const LatestNews = () => {
     ];
 
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 60 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+        <div
             className="bg-[#F7F5F2] border-2 border-zinc-300"
         >
             <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -125,6 +121,6 @@ export const LatestNews = () => {
 
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 };
