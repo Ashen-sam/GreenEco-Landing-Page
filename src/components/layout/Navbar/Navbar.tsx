@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import treeLogo from "../../../../public/hand-up-leaf-logo-design-with-vector_1249511-1344.jpg"
 
+
 export const Navbar = () => {
     const [isOpenMenu, setIsOpenMenu] = useState(false)
 
@@ -30,7 +31,7 @@ export const Navbar = () => {
             >
                 <div className="flex items-center justify-center">
                     <img src={treeLogo} width={40} alt="TreeLogo" />
-                    <div className="lobster_font text-[23px]">GreenEco</div>
+                    <div className="lobster_font main_text text-[23px]">GreenEco</div>
                 </div>
 
                 <div className="flex items-center justify-center gap-8 ">
@@ -59,9 +60,15 @@ export const Navbar = () => {
                 </div>
             </motion.div>
 
-            <button className="absolute right-3 top-2 md:hidden z-50" onClick={handleOpenMenu}>
-                {isOpenMenu ? <X size={24} /> : <Menu size={24} />}
-            </button>
+            <div className="flex absolute bg-white rounded-sm px-4 py-1  right-3 left-2 top-2 md:hidden z-50 justify-between items-center">
+                <div className="flex items-center justify-center">
+                    <img src={treeLogo} width={40} alt="TreeLogo" />
+                    <div className="lobster_font  main_text  text-[23px]">GreenEco</div>
+                </div>
+                <button className="" onClick={handleOpenMenu}>
+                    {isOpenMenu ? <X className="text-gray-600" size={24} /> : <Menu className="text-gray-600" size={24} />}
+                </button>
+            </div >
 
             <AnimatePresence >
                 {isOpenMenu && (
@@ -70,7 +77,7 @@ export const Navbar = () => {
                         animate={{ y: 0, opacity: 1 }}
                         exit={{ y: -200, opacity: 0 }}
                         transition={{ type: 'tween' }}
-                        className="absolute  top-0 left-0 w-full md:hidden bg-white shadow-2xl rounded-md z-40"
+                        className="  top-0 absolute left-0 w-full md:hidden bg-white shadow-2xl rounded-md z-40"
                     >
                         <div className="flex flex-col justify-start items-start p-4">
                             <motion.div
@@ -81,11 +88,10 @@ export const Navbar = () => {
                                     type: 'tween', delay: 0.13, stiffness: 110,
                                     mass: 1,
                                 }} className="flex items-center justify-center">
-                                <img src={treeLogo} width={40} alt="TreeLogo" />
-                                <div className="lobster_font text-[23px]">GreenEco</div>
+
                             </motion.div>
 
-                            <div className="flex flex-col w-full gap-4 mt-4">
+                            <div className="flex flex-col w-full gap-4 mt-10">
                                 {navLinks.map((link, index) => (
                                     <motion.div
                                         initial={{ opacity: 0, x: -15 }}
@@ -118,6 +124,6 @@ export const Navbar = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
-        </div>
+        </div >
     )
 }

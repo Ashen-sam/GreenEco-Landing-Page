@@ -83,7 +83,15 @@
   background-position: center;
   width: 100%;
 }
-
+@media (max-width: 1024px) {
+  .hero_wall::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(14, 14, 14, 0.35);
+    pointer-events: none;
+  }
+}
 .stats_wall {
   background-image: url("../public/stats_wall.png");
   background-size: cover;

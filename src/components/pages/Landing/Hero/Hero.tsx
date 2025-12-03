@@ -17,7 +17,7 @@ export const Hero = () => {
             className="hero_wall   min-h-screen flex  justify-center p-4 sm:p-6 md:p-8 lg:p-12 relative overflow-hidden"
         >
 
-            <div className="w-full max-w-[1200px]  pt-12 relative z-10">
+            <div className="w-full max-w-[1370px] md:mt-4  pt-12 relative z-10">
                 <div className="relative flex flex-col gap-8  sm:gap-10 md:gap-12 lg:gap-16">
 
                     <motion.div
@@ -30,9 +30,9 @@ export const Hero = () => {
                             mass: 1,
                             delay: 0.2
                         }}
-                        className="text-[40px]   xs:text-[50px] sm:text-[60px] md:text-[80px] bodini_font lg:text-[100px] xl:text-[110px]  leading-[1.05] main_text"
+                        className="text-[40px] relative   xs:text-[50px] sm:text-[60px] md:text-[80px] bodini_font lg:text-[100px] xl:text-[130px]  leading-[1.05] main_text"
                     >
-                        <div className="md:grid main_text  hidden grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+                        <div className="lg:grid main_text  hidden grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
                             <div className="flex flex-col gap-2 sm:gap-3 md:gap-4">
                                 <motion.div
                                     initial={{ x: -35, opacity: 0 }}
@@ -68,7 +68,7 @@ export const Hero = () => {
                             </div>
                         </div>
                         <motion.div
-                            className='md:hidden mt-6 '
+                            className='lg:hidden mt-6 md:text-none text-white '
                             initial={{ x: -35, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{
@@ -147,9 +147,9 @@ export const Hero = () => {
                                 mass: 1,
                                 delay: 1.2
                             }}
-                            className="w-full lg:w-auto lg:max-w-[380px] xl:max-w-[470px] bg-white p-5 sm:p-6 md:p-5 rounded-2xl shadow-xl"
+                            className="w-full md:absolute md:-right-30 md:-bottom-20 lg:w-auto lg:max-w-[380px] xl:max-w-[470px] bg-white p-5 sm:p-6 md:p-5 rounded-2xl shadow-xl"
                         >
-                            <div className="flex items-start gap-4 sm:gap-5">
+                            <div className="flex sm:flex-row sm:text-left text-center flex-col sm:items-start gap-4 sm:gap-5">
                                 <div className="rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                                     <img src={handTree} width={150} alt="handTree" className=" " />
                                 </div>

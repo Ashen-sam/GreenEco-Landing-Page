@@ -81,7 +81,7 @@ export const TrustedTeam = () => {
                             stiffness: 110,
                             delay: 0.2
                         }}
-                        className="text-4xl main_text leading-24 md:text-5xl font-semibold  ">
+                        className="md:text-5xl text-xl leading-18 xs:text-[50px] sm:text-[60px]  ">
                         Meet Our Trusted Team of
                     </motion.div>
                     <motion.div
