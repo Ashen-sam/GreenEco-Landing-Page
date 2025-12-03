@@ -19,8 +19,9 @@ export const Layout = () => {
             <AnimatePresence mode="wait">
                 {loading && (
                     <motion.div
-                        initial={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
+                        initial={{ opacity: 1, scale: 0.8 }}
+                        exit={{ opacity: 0, scale: 1.8 }}
+
                         className="fixed overflow-hidden inset-0 z-1001 flex items-center justify-center bg-white"
                     >
                         <div className="relative flex items-center justify-center">

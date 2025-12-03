@@ -1,5 +1,7 @@
-### Developer : Ashen  Samarasekera
+### Developer : Ashen Samarasekera
+
 ### Made with
+
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
@@ -7,7 +9,6 @@
 ![Lenis](https://img.shields.io/badge/Lenis-FF6EC7?style=for-the-badge&logoColor=white)
 ![Typescript](https://img.shields.io/badge/Typescript-0F52BA?style=for-the-badge&logo=Typescript&logoColor=white)
 
+### Resources
 
-
-
-
+I’ve used the smooth scrolling animation from my previous portfolio project, where I implemented Lenis for smooth scroll experience. I also reused the page loading animations I built earlier using AnimatePresence, since they were already optimized and worked well for this setup.

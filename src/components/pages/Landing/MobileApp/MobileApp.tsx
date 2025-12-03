@@ -9,7 +9,7 @@ export const MobileApp = () => {
         >
             <div className="max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-0">
 
-                <div className="md:max-w-full max-w-[600px] md:min-h-full min-h-[800px] m-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center relative text-white">
+                <div className="md:max-w-full max-w-[600px] md:min-h-[1200px] min-h-[800px] m-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center relative text-white">
 
                     <motion.div
                         initial={{ opacity: 0, x: -40 }}
@@ -20,18 +20,34 @@ export const MobileApp = () => {
                             stiffness: 120,
                             damping: 12,
                             mass: 1,
-                            delay: 0.3
+                            delay: 0.35
                         }}
                         className="text-center lg:text-left border-l-2 border-zinc-300"
                     >
-                        <div className="text-2xl sm:text-3xl font-semibold border-b-2 bodini_font border-zinc-300 pl-3 sm:pl-4 py-3">
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                type: "spring",
+                                stiffness: 110,
+                                delay: 0.2
+                            }} className="text-2xl sm:text-3xl font-semibold border-b-2 bodini_font border-zinc-300 pl-3 sm:pl-4 py-3">
                             1 Million trees worldwide
-                        </div>
-                        <div className="text-sm sm:text-base leading-relaxed p-3 sm:p-4">
+                        </motion.div>
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{
+                                type: "spring",
+                                stiffness: 110,
+                                delay: 0.28
+                            }} className="text-sm sm:text-base leading-relaxed p-3 sm:p-4">
                             Our app has helped plant over 1 million trees worldwide, with the help
                             of our community of dedicated tree planters. Join us in our mission
                             to create a greener future by downloading the app today!
-                        </div>
+                        </motion.div>
                     </motion.div>
 
                     <motion.div
@@ -60,16 +76,42 @@ export const MobileApp = () => {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                            <img
-                                src={appleStore}
-                                className="h-10 sm:h-12 mx-auto sm:mx-0"
-                                alt="Download on App Store"
-                            />
-                            <img
-                                src={playStore}
-                                className="h-10 sm:h-12 mx-auto sm:mx-0"
-                                alt="Get it on Google Play"
-                            />
+                            <motion.div
+                                initial={{ opacity: 0, x: 30 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.7, type: "spring",
+                                    stiffness: 120,
+                                    damping: 12,
+                                    mass: 1,
+                                    delay: 0.35
+                                }}>
+                                <img
+                                    src={appleStore}
+                                    className="h-10 sm:h-12 mx-auto sm:mx-0"
+                                    alt="Download on App Store"
+                                />
+                            </motion.div>
+                            <motion.div
+                                initial={{ opacity: 0, x: 40 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.7, type: "spring",
+                                    stiffness: 120,
+                                    damping: 12,
+                                    mass: 1,
+                                    delay: 0.38
+                                }}>
+                                <img
+                                    src={playStore}
+                                    className="h-10 sm:h-12 mx-auto sm:mx-0"
+                                    alt="Get it on Google Play"
+                                />
+
+                            </motion.div>
+
                         </div>
                     </motion.div>
 

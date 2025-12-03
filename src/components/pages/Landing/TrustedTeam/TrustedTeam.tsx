@@ -72,12 +72,29 @@ export const TrustedTeam = () => {
             </div>
             <div className="mx-auto  bodini_font  py-8">
                 <div className="text-center mb-16">
-                    <h2 className="text-4xl text-[#121C2D] leading-24 md:text-5xl font-semibold  ">
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 110,
+                            delay: 0.2
+                        }}
+                        className="text-4xl main_text leading-24 md:text-5xl font-semibold  ">
                         Meet Our Trusted Team of
-                    </h2>
-                    <h3 className="text-4xl text-[#121C2D]  md:text-5xl font-semibold  mt-2">
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 110,
+                            delay: 0.23
+                        }} className="text-4xl main_text  md:text-5xl font-semibold  mt-2">
                         Supervisory Authorities
-                    </h3>
+                    </motion.div>
                 </div>
                 <div className="space-y-8 ">
                     <div className="overflow-hidden relative h-32 md:h-40">
@@ -90,7 +107,7 @@ export const TrustedTeam = () => {
                                 duration: 20,
                                 repeat: Infinity,
                                 ease: 'linear',
-                                repeatType: 'loop'
+                                repeatType: 'loop',
                             }}
                         >
                             {firstRowDuplicated.map((logo, index) => (

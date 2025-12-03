@@ -30,43 +30,78 @@ export const Revolution = () => {
 
     return (
         <div
-            className="w-full py-10 bg-[#c8e6d0] bodini_font bg_waves_wallpaper px-4"
+            className="w-full py-10 bg-[#c8e6d0] revolution_wallpaper bodini_font bg_waves_wallpaper px-4"
         >
             <div className="max-w-[1400px] m-auto">
                 <div className="flex flex-col items-center bodini_font text-center gap-3">
-                    <h2 className="text-5xl leading-24">Join the Green Revolution</h2>
-                    <p className="text-5xl">Choose Your Path to Making a Difference Today!</p>
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 110,
+                            delay: 0.2
+                        }} className="md:text-5xl text-xl leading-18 xs:text-[50px] sm:text-[60px]   ">Join the Green Revolution</motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            type: "spring",
+                            stiffness: 110,
+                            delay: 0.2
+                        }} className="md:text-4xl text-3xl   ">Choose Your Path to Making a Difference Today!</motion.div>
                 </div>
 
                 <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 my-20">
                     {cards.map((card, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{
-                                duration: 0.6, delay: index * 0.15, type: "spring",
-                                stiffness: 120,
-                                damping: 12,
-                                mass: 1,
-                            }}
-                            className="flex flex-col items-center text-center gap-4"
-                        >
-                            <img
-                                src={card.image}
-                                className="h-36 w-36 rounded-full object-cover shadow-lg"
-                            />
-                            <div className="text-2xl font-semibold">{card.title}</div>
-                            <div className="text-xs plus_jakarta_font px-2 md:min-h-15">
-                                {card.description}
-                            </div>
-                            <button className="px-6 plus_jakarta_font py-2.5 rounded-md bg-[#3aa456] text-white text-sm font-medium transition-colors">
-                                Contribute Now
-                            </button>
-                        </motion.div>
+                        <div key={index} className="flex items-center">
+                            <motion.div
+                                initial={{ opacity: 0, y: 40 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{
+                                    duration: 0.6,
+                                    delay: index * 0.15,
+                                    type: "spring",
+                                    stiffness: 120,
+                                    damping: 12,
+                                    mass: 1,
+                                }}
+                                className="flex flex-col items-center text-center gap-4"
+                            >
+                                <img
+                                    src={card.image}
+                                    className="h-36 w-36 rounded-full object-cover shadow-lg"
+                                />
+                                <div className="text-2xl font-semibold">{card.title}</div>
+                                <div className="text-xs plus_jakarta_font px-2 md:min-h-15">
+                                    {card.description}
+                                </div>
+                                <button className="px-6 plus_jakarta_font py-2.5 rounded-md bg-[#3aa456] text-white text-sm font-medium transition-colors">
+                                    Contribute Now
+                                </button>
+                            </motion.div>
+
+                            {index !== cards.length - 1 && (
+                                <motion.div
+                                    initial={{ opacity: 0, x: 40 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{
+                                        duration: 0.6,
+                                        delay: index * 0.15,
+                                        type: "spring",
+                                        stiffness: 120,
+                                        damping: 12,
+                                        mass: 1,
+                                    }} className="hidden md:block  h-80 w-px bg-[#a6c5ae] mx-4"></motion.div>
+                            )}
+                        </div>
                     ))}
                 </div>
+
             </div>
         </div>
     );

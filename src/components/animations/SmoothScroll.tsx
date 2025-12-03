@@ -6,7 +6,7 @@ export const SmoothScroll = () => {
     const lenis = new Lenis({
       duration: 1.2,
       easing: (x: number) => 1 - Math.pow(1 - x, 3),
-      lerp: 0.1,
+      lerp: 0.07,
     });
 
     function raf(time: number) {

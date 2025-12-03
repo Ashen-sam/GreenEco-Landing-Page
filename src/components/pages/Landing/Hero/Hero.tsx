@@ -14,12 +14,11 @@ export const Hero = () => {
                 mass: 1,
                 delay: 0.18
             }}
-            className="hero_wall min-h-screen flex items-center justify-center p-4 sm:p-6 md:p-8 lg:p-12 relative overflow-hidden"
+            className="hero_wall  min-h-screen flex items-center justify-center p-4 sm:p-6 md:p-8 lg:p-12 relative overflow-hidden"
         >
-            <div className="absolute inset-0 w-full h-full"></div>
 
             <div className="w-full max-w-[1400px] relative z-10">
-                <div className="relative flex flex-col gap-8 sm:gap-10 md:gap-12 lg:gap-16">
+                <div className="relative flex flex-col gap-8  sm:gap-10 md:gap-12 lg:gap-16">
 
                     <motion.div
                         initial={{ x: -35, opacity: 0 }}
@@ -31,9 +30,9 @@ export const Hero = () => {
                             mass: 1,
                             delay: 0.2
                         }}
-                        className="text-[40px] xs:text-[50px] sm:text-[60px] md:text-[80px] lg:text-[100px] xl:text-[130px] font-serif leading-[1.05] text-stone-800"
+                        className="text-[40px]  xs:text-[50px] sm:text-[60px] md:text-[80px] bodini_font lg:text-[100px] xl:text-[110px]  leading-[1.05] text-stone-800"
                     >
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
+                        <div className="grid main_text  grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
                             <div className="flex flex-col gap-2 sm:gap-3 md:gap-4">
                                 <motion.div
                                     initial={{ x: -35, opacity: 0 }}
@@ -87,9 +86,17 @@ export const Hero = () => {
                             <div className="text-sm sm:text-base md:text-[15px] text-stone-700 leading-relaxed max-w-[500px]">
                                 Did you know that deforestation contributes to over 15% of global greenhouse gas emissions? Join us in our mission to create a healthier planet for all.
                             </div>
-                            <button className="bg-[#3aa456] hover:bg-[#329947] text-white px-8 py-3.5 sm:py-4 rounded-md font-medium transition-colors text-sm sm:text-base w-full sm:w-auto max-w-[200px]">
+                            <motion.button
+                                initial={false}
+                                whileHover={{
+                                    backgroundColor: "#329947",
+                                    transition: { duration: 0.35 }
+                                }}
+                                className="common_button_bg text-white px-8 py-3.5 sm:py-4 rounded-md font-medium text-sm sm:text-base w-full sm:w-auto max-w-[200px]"
+                            >
                                 Contribute Now
-                            </button>
+                            </motion.button>
+
                         </div>
 
                         <motion.div
@@ -102,7 +109,7 @@ export const Hero = () => {
                                 mass: 1,
                                 delay: 1.2
                             }}
-                            className="w-full lg:w-auto lg:max-w-[380px] xl:max-w-[470px] bg-white p-5 sm:p-6 md:p-7 rounded-2xl shadow-xl"
+                            className="w-full lg:w-auto lg:max-w-[380px] xl:max-w-[470px] bg-white p-5 sm:p-6 md:p-5 rounded-2xl shadow-xl"
                         >
                             <div className="flex items-start gap-4 sm:gap-5">
                                 <div className="rounded-full flex items-center justify-center shrink-0 overflow-hidden">

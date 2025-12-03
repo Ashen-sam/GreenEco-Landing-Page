@@ -5,19 +5,15 @@ import image8 from '../../../../../public/image8.jpeg'
 
 export const Mission = () => {
     return (
-        <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true, amount: 0.3 }}
+        <div
             className="bg-[#f7f6f2] w-full py-16 px-6 md:px-20 plus_jakarta_font"
         >
             <div className="max-w-[1400px] m-auto">
 
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.23 }}
                     viewport={{ once: true }}
                     className="text-[#121C2D] text-lg font-medium"
                 >
@@ -25,9 +21,9 @@ export const Mission = () => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.15 }}
+                    initial={{ opacity: 0, x: -26 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5, delay: 0.28 }}
                     viewport={{ once: true }}
                     className="text-lg text-[#121C2D] font-medium mt-1 mb-12"
                 >
@@ -53,8 +49,8 @@ export const Mission = () => {
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, y: 25 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, x: -30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.55, delay: 0.15 }}
                         viewport={{ once: true }}
                         className="flex flex-col items-center text-center gap-4 border-b border-black/10 pb-10"
@@ -65,16 +61,19 @@ export const Mission = () => {
                     </motion.div>
 
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0, x: 35 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.55, delay: 0.2 }}
                         viewport={{ once: true }}
                         className="flex flex-col md:flex-row items-center m-auto gap-6 md:gap-10"
                     >
                         <div className="flex items-center text-3xl md:text-5xl text-[#121C2D] gap-3">
-                            <div className="h-10 w-10 rounded-full bg-black/10 flex items-center justify-center text-xl">
+                            <motion.div initial={{ rotate: 0 }}
+                                whileInView={{ rotate: 360 }}
+                                viewport={{ amount: 0.1, once: false }}
+                                transition={{ duration: 0.8 }} className="h-10 w-10 rounded-full bg-black/10 flex items-center justify-center text-xl">
                                 <Shuffle size={16} />
-                            </div>
+                            </motion.div>
                             Carbon Footprint
                         </div>
 
@@ -88,6 +87,6 @@ export const Mission = () => {
                     </motion.div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }

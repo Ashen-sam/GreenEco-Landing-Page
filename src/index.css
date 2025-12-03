@@ -4,6 +4,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap");
 @import "tailwindcss";
 
+:root {
+  --main-text: #121c2d;
+  --sub-text: #3aa456;
+  --common-button-bg: #3aa456;
+  --common-button-text: ;
+}
+
+.main_text {
+  color: var(--main-text);
+}
+.common_button_bg {
+  background-color: var(--common-button-bg);
+}
+
+.common_button_bg :hover {
+  background-color: #329947;
+}
+
 .plus_jakarta_font {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -37,6 +55,25 @@
   background-repeat: no-repeat;
   background-position: center;
   min-height: 80vh;
+}
+.revolution_wallpaper {
+  position: relative;
+}
+
+.revolution_wallpaper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../public/revolution_bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.revolution_wallpaper > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero_wall {
