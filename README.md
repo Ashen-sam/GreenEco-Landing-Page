@@ -12,4 +12,18 @@
 
 ### Resources
 
-I’ve used the smooth scrolling animation from my previous portfolio project, where I implemented Lenis for smooth scroll experience. I also reused the page loading animations I built earlier using AnimatePresence, since they were already optimized and worked well for this setup.
+- I’ve used the smooth scrolling animation from my previous portfolio project, where I implemented Lenis for smooth scroll experience. I also reused the page loading animations I built earlier using AnimatePresence, since they were already optimized and worked well for this setup.
+
+### Improvements
+
+- I added some smooth animations with Framer Motion to make the pages feel nicer.
+- Used Lenis to make the scrolling smoother on all devices.
+- Cleaned up some components to make the code easier to understand.
+- Improved the responsive design so it looks better on tablets and phones.
+- Adjusted some UI parts like cards and buttons to make the whole design look more neat.
+
+### How to open this project
+
+- Design(Dribble) - https://dribbble.com/shots/22889194-GreenEco-Landing-Page
+- live link - https://green-eco-eosin.vercel.app/
+- git clone - https://github.com/Ashen-sam/GreenEco-Landing-Page.git
