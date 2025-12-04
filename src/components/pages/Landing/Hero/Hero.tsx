@@ -4,14 +4,7 @@ import handTree from '../../../../../public/6769485-removebg-preview.png'
 
 export const Hero = () => {
     return (
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-                type: "spring",
-                stiffness: 120,
-                delay: 0.18
-            }}
+        <div
             className="hero_wall   min-h-screen flex  justify-center p-4 sm:p-6 md:p-8 lg:p-12 relative overflow-hidden"
         >
             <div className="w-full max-w-[1400px]  relative z-10">
@@ -161,6 +154,6 @@ export const Hero = () => {
                     </motion.div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
