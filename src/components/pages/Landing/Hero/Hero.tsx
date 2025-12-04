@@ -58,7 +58,7 @@ export const Hero = () => {
                             </div>
                         </div>
                         <motion.div
-                            className='lg:hidden mt-6 md:text-none text-white '
+                            className='lg:hidden  mt-20 md:text-none text-5xl text-white '
                             initial={{ x: -35, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{
@@ -71,7 +71,7 @@ export const Hero = () => {
                                 transition={{
                                     delay: 0.5, type: "spring", stiffness: 110,
 
-                                }} className=' italic common_button_bg leading-[70px] px-5 py-1  text-4xl text-white rounded-xl'>future</motion.span>
+                                }} className='  leading-[70px]  text-white'>future</motion.span>
                         </motion.div>
                     </motion.div>
                     <motion.div
@@ -87,7 +87,7 @@ export const Hero = () => {
                         className="flex  flex-col lg:flex-row justify-between items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12 mt-4 sm:mt-6 md:mt-40"
                     >
                         <div className="w-full lg:w-auto lg:max-w-[400px] xl:max-w-[450px] flex flex-col gap-4 sm:gap-3">
-                            <div className='flex items-center  gap-3'>
+                            <div className='md:flex hidden items-center  gap-3 '>
                                 <motion.div
                                     initial={{ y: -30, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
@@ -107,7 +107,7 @@ export const Hero = () => {
                                     <CornerRightDown className='mt-3 text-[#818181] sm:w-4 sm:h-4' />
                                 </motion.div>
                             </div>
-                            <li className=" md:bg-transparent bg-white/95 md:not-italic md:shadow-none shadow-xl italic md:p-0 p-3 rounded-xl  text-sm sm:text-base md:text-[15px] text-stone-700 leading-relaxed max-w-[500px]">
+                            <li className=" md:bg-transparent md:shadow-none shadow-xl  md:p-0 p-3 rounded-xl  text-sm sm:text-base md:text-[15px] text-white lg:text-stone-700 leading-relaxed max-w-[500px]">
                                 Did you know that deforestation contributes to over 15% of global greenhouse gas emissions? Join us in our mission to create a healthier planet for all.
                             </li>
                             <motion.button

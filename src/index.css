@@ -93,11 +93,15 @@
   padding: 140px;
 }
 @media (max-width: 1024px) {
+  .hero_wall {
+    background-image: url("../public/leaves-wallpaper-3840x2160-botanical-plant-life-19901.jpg"); /* New image for smaller screens */
+  }
+
   .hero_wall::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(14, 14, 14, 0.35);
+    background: rgba(36, 36, 36, 0.35);
     pointer-events: none;
   }
 }
