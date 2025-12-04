@@ -84,17 +84,13 @@ export const Footer = () => {
                         ))}
                     </div>
                     <div className="flex md:justify-start lg:justify-end">
-                        <motion.div
-                            initial={{ opacity: 0, x: 50 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ type: 'spring', stiffness: 110, delay: 0.18 }}>
+                        <div>
                             <select className="bg-transparent border border-gray-600 rounded px-4 py-2.5 text-sm w-36 cursor-pointer">
                                 <option className="bg-[#0f1c2e]">English</option>
                                 <option className="bg-[#0f1c2e]">Sinhala</option>
                                 <option className="bg-[#0f1c2e]">Hi my name is Ashen</option>
                             </select>
-                        </motion.div>
+                        </div>
                     </div>
                 </div>
                 <motion.div

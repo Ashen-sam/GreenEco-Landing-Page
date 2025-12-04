@@ -12,7 +12,7 @@ export const Stats = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, type: "spring", stiffness: 110 }}
             viewport={{ once: true, amount: 0.3 }}
-            className="w-full bg-[#0d1b2a] min-h-[300px] stats_wall text-white py-12 flex flex-col bodini_font md:flex-row items-center justify-center gap-12 md:gap-24"
+            className="w-full bg-[#0d1b2a] min-h-[300px] stats_wall text-white py-12 flex flex-col stats_font md:flex-row items-center justify-center gap-12 md:gap-24"
         >
             {stats.map((item, index) => (
                 <motion.div
@@ -27,7 +27,7 @@ export const Stats = () => {
                         <div className="text-3xl flex items-center gap-2 md:text-5xl font-semibold tracking-[1.1px]">
                             {item.value == "280" ? item.value : (
                                 <div className="flex items-center justify-center gap-2">
-                                    <div>
+                                    <div className="font-normal">
                                         {item.value}
                                     </div>
                                     <motion.div
