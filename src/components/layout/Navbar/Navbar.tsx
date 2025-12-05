@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
-import treeLogo from "../../../../public/hand-up-leaf-logo-design-with-vector_1249511-1344.jpg"
+import treeLogo from "../../../../public/logoNewTree.png"
 
 
 export const Navbar = () => {
@@ -27,7 +27,7 @@ export const Navbar = () => {
                     type: 'spring', delay: 0.2, stiffness: 110, damping: 12,
                     mass: 1,
                 }}
-                className="md:flex bg-[#fcfaf8]  z-1000 right-0 left-0  absolute hidden justify-between items-center p-4 text-sm plus_jakarta_font rounded-xl top-0"
+                className="md:flex bg-[#f8f8f8]  z-1000 right-0 left-0   absolute hidden justify-between items-center p-4 text-sm plus_jakarta_font rounded-xl top-0"
             >
                 <div className="flex items-center justify-center">
                     <img src={treeLogo} width={40} alt="TreeLogo" />

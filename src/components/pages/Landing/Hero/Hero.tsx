@@ -58,7 +58,7 @@ export const Hero = () => {
                             </div>
                         </div>
                         <motion.div
-                            className='lg:hidden  mt-20 md:text-none text-5xl text-white '
+                            className='lg:hidden  mt-20 md:text-none sm:text-8xl text-white '
                             initial={{ x: -35, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
                             transition={{

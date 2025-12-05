@@ -20,10 +20,17 @@
 - Used Lenis to make the scrolling smoother on all devices.
 - Cleaned up some components to make the code easier to understand.
 - Improved the responsive design so it looks better on tablets and phones.
-- Adjusted some UI parts like cards and buttons to make the whole design look more neat.
+- In mobile tablet version changed the background ,beacuse for better ux.
+- Adjusted some UI parts in smaller devices for better experience.
 
 ### How to open this project
 
 - Design(Dribble) - https://dribbble.com/shots/22889194-GreenEco-Landing-Page
 - live link - https://green-eco-eosin.vercel.app/
 - git clone - https://github.com/Ashen-sam/GreenEco-Landing-Page.git
+
+### Code
+
+- Implemented Clean folders, files architecture with seperate components and reusable components way.
+- Used barrel design pattern for import and exports for clean code.
+- Implemented common css variables and implemented utility classes and used.
