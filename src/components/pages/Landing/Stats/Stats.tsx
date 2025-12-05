@@ -1,7 +1,11 @@
 import { motion } from "framer-motion"
 
+interface IStats {
+    value: string;
+    label: string;
+}
 export const Stats = () => {
-    const stats = [
+    const stats: IStats[] = [
         { value: "977 million", label: "Trees produced, planted, and protected" },
         { value: "280", label: "Project sites in 10 countries" },
         { value: "14,800", label: "Projects Active" }

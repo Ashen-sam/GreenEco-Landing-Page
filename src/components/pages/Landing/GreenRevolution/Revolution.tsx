@@ -4,8 +4,13 @@ import image2 from '../../../../../public/image2.jpg'
 import image3 from '../../../../../public/image3.jpg'
 import image4 from '../../../../../public/image4.jpg'
 
+interface IRevolutionCards {
+    image: string;
+    title: string;
+    description: string
+}
 export const Revolution = () => {
-    const cards = [
+    const cards: IRevolutionCards[] = [
         {
             image: image1,
             title: "Create Your Own Green Haven: Plant a Tree",
@@ -42,7 +47,7 @@ export const Revolution = () => {
                             type: "spring",
                             stiffness: 110,
                             delay: 0.2
-                        }} className="md:text-5xl text-xl leading-18 xs:text-[50px] sm:text-[60px]   ">Join the Green Revolution</motion.div>
+                        }} className="md:text-5xl text-xl leading-18 xs:text-[50px] sm:text-[60px]  ">Join the Green Revolution</motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}

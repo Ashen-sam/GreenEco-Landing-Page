@@ -70,7 +70,6 @@ export const Hero = () => {
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{
                                     delay: 0.5, type: "spring", stiffness: 110,
-
                                 }} className='  leading-[70px]  text-white'>future</motion.span>
                         </motion.div>
                     </motion.div>
@@ -137,7 +136,6 @@ export const Hero = () => {
                                 <div className="rounded-full flex items-center justify-center shrink-0 overflow-hidden">
                                     <img src={handTree} width={150} alt="handTree" className=" " />
                                 </div>
-
                                 <div className="flex-1 min-w-0">
                                     <div className="font-semibold bodini_font text-stone-800 mb-2 text-base sm:text-lg">
                                         Ready to make a difference?

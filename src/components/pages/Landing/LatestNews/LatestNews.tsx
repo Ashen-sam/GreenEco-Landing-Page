@@ -3,8 +3,14 @@ import image1 from '../../../../../public/commitment-third-BBPnolmU-removebg-pre
 import image5 from '../../../../../public/image5.jpg'
 import image6 from '../../../../../public/image6.jpg'
 
+interface INewsItems {
+    id: number;
+    image: string;
+    title: string;
+    description: string;
+}
 export const LatestNews = () => {
-    const newsItems = [
+    const newsItems: INewsItems[] = [
         {
             id: 1,
             image: image5,

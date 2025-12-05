@@ -2,8 +2,13 @@ import { Instagram, Linkedin, Twitter } from 'lucide-react';
 import treeLogo from "../../../../public/logoNewTree.png";
 import { motion } from 'framer-motion';
 
+interface ILinks {
+    name: string;
+    href: string;
+}
+
 export const Footer = () => {
-    const leftLinks = [
+    const leftLinks: ILinks[] = [
         { name: 'About Us', href: 'https://www.linkedin.com/in/ashen-samarasekera-08354a249/' },
         { name: 'Contribution', href: 'https://www.linkedin.com/in/ashen-samarasekera-08354a249/' },
         { name: 'FAQ', href: 'https://www.linkedin.com/in/ashen-samarasekera-08354a249/' },

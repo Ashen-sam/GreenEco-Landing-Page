@@ -9,7 +9,6 @@ export const MobileApp = () => {
         >
             <div className="max-w-[1620px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-0">
                 <div className="md:max-w-full max-w-[600px] md:min-h-[1200px] min-h-[800px] m-auto grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center relative text-white">
-
                     <motion.div
                         initial={{ opacity: 0, x: -40 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -100,7 +99,6 @@ export const MobileApp = () => {
                                     mass: 1,
                                     delay: 0.38
                                 }}>
-
                                 <img
                                     src={appleStore}
                                     className="h-10 sm:h-12 mx-auto sm:mx-0"
@@ -109,7 +107,6 @@ export const MobileApp = () => {
                             </motion.div>
                         </div>
                     </motion.div>
-
                 </div>
             </div>
         </div>
