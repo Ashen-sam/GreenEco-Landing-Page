@@ -26,6 +26,7 @@
 - live link - https://green-eco-eosin.vercel.app/
 - git clone - https://github.com/Ashen-sam/GreenEco-Landing-Page.git
 - git repo - https://github.com/Ashen-sam/GreenEco-Landing-Page
+- drive link - https://drive.google.com/file/d/13BUR5YsApi7mRqYnOx5ZWvIoRiKCl6mC/view?usp=sharing
 
 ### Resources
 
