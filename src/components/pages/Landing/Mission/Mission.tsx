@@ -37,7 +37,7 @@ export const Mission = () => {
                     >
                         <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[#121C2D] leading-tight">
                             We're Growing a
-                            <span className="inline-block mx-2 sm:mx-3 rounded-full overflow-hidden h-8 sm:h-10 md:h-14 lg:h-16 w-20 sm:w-28 md:w-48 lg:w-80 align-middle">
+                            <span className="inline-block mx-2 sm:mx-3 rounded-full overflow-hidden h-8 sm:h-10 md:h-14 lg:h-18 w-20 sm:w-28 md:w-48 lg:w-80 align-middle">
                                 <img src={image7} className="h-full w-full object-cover" />
                             </span>
                             Greener Future
@@ -70,7 +70,7 @@ export const Mission = () => {
                             </motion.div>
                             <span className="leading-tight">Carbon Footprint</span>
                         </div>
-                        <div className="rounded-full overflow-hidden h-8 sm:h-10 md:h-14 lg:h-16 w-20 sm:w-28 md:w-48 lg:w-80 shrink-0">
+                        <div className="rounded-full overflow-hidden h-8 sm:h-10 md:h-14 lg:h-18 w-20 sm:w-28 md:w-48 lg:w-80 shrink-0">
                             <img src={image8} className="h-full w-full object-cover" />
                         </div>
                         <div className="text-green-600 plus_jakarta_font underline font-medium flex text-lg sm:text-xl md:text-2xl items-center gap-1 cursor-pointer">
