@@ -9,6 +9,7 @@
 ![Lucide](https://img.shields.io/badge/Lucide%20Icons-00AEEF?style=for-the-badge&logo=lucide&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 ![Lenis](https://img.shields.io/badge/Lenis-FF6EC7?style=for-the-badge&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-222222?style=for-the-badge&logo=vercel&logoColor=white)
 
 ### Improvements
 
